@@ -2,16 +2,16 @@ package com.example.supermarketcomputer;
 
 import com.example.supermarketcomputer.domain.*;
 import com.example.supermarketcomputer.controller.FruitOrderController;
+import com.example.supermarketcomputer.service.FruitPricingService;
 import com.example.supermarketcomputer.service.impl.DefaultFruitPricingService;
 import com.example.supermarketcomputer.strategy.DeductStrategy;
-import com.example.supermarketcomputer.strategy.DiscountStrategy;
 import com.example.supermarketcomputer.strategy.PromotionStrategy;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.*;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 public class FruitPricingServiceTest {
 
